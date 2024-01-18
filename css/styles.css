@@ -90,8 +90,14 @@ img {
     display: flex;
     align-items: center;
 }
-.contact-item {
+.contact-mail {
+    display: flex;
     margin-right: 50px;
+    align-items: center;
+}
+.contact-icon {
+    display: block;
+    margin-right: 10px;
 }
 .mail {
     display: block;
@@ -103,6 +109,17 @@ img {
 }
 .mail:hover,
 .mail:focus {
+    color: var(--accent-color);
+}
+.contact-phone {
+    display: flex;
+    align-items: center;
+}
+.phone-icon {
+    margin-right: 10px;
+}
+.phone-icon:hover,
+.phone-icon:focus {
     color: var(--accent-color);
 }
 .phone {
@@ -118,7 +135,10 @@ img {
     color: var(--accent-color);
 }
 .upper-section {
-    background-color: #2F303A;
+    background-color: rgba(47, 48, 58, 0.4);
+    background-image: url(../images/bg-img.png);
+    background-repeat: no-repeat;
+    background-position: center;
     padding-bottom: 200px;
     padding-top: 200px;
 }
@@ -152,6 +172,12 @@ img {
 }
 .benefits-list {
     display: flex;
+}
+.benefits-icon {
+    background-color: rgba(245, 244, 250, 1);
+    margin-bottom: 30px;
+    width: 70px;
+    height: 70px;
 }
 .benefits-item {
     margin-right: 30px;
@@ -227,6 +253,9 @@ img {
     font-weight: 400;
     line-height: 1.2;
     color: var(--text-color);
+}
+.team-icons {
+    display: flex;
 }
 .footer-container .logo {
     margin-bottom: 28px;
