@@ -91,39 +91,36 @@ img {
     align-items: center;
 }
 .contact-mail {
-    display: flex;
     margin-right: 50px;
-    align-items: center;
-}
-.contact-icon {
-    display: block;
-    margin-right: 10px;
 }
 .mail {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 32px 0;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.1;
     color: var(--text-color);
 }
+
 .mail:hover,
 .mail:focus {
     color: var(--accent-color);
 }
-.contact-phone {
-    display: flex;
-    align-items: center;
+.contact-icon {
+    margin-right: 10px;
+    fill: currentColor;
 }
+
 .phone-icon {
     margin-right: 10px;
-}
-.phone-icon:hover,
-.phone-icon:focus {
-    color: var(--accent-color);
+    fill: currentColor;
 }
 .phone {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 32px 0;
     font-size: 14px;
     font-weight: 500;
