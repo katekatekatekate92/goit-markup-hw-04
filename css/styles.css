@@ -132,8 +132,7 @@ img {
     color: var(--accent-color);
 }
 .upper-section {
-    background-color: rgba(47, 48, 58, 0.4);
-    background-image: url(../images/bg-img.png);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-img.png);
     background-repeat: no-repeat;
     background-position: center;
     padding-bottom: 200px;
@@ -171,10 +170,12 @@ img {
     display: flex;
 }
 .benefits-icon {
+    padding: 25px 100px;
+    display: block;
     background-color: rgba(245, 244, 250, 1);
     margin-bottom: 30px;
-    width: 70px;
-    height: 70px;
+    width: 270px;
+    height: 120px;
 }
 .benefits-item {
     margin-right: 30px;
@@ -230,6 +231,11 @@ img {
     margin-right: 30px;
     text-align: center;
     background-color: #FFFFFF;
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 
+    0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
 }
 .team-item:last-child {
     margin-right: 0px;
@@ -251,8 +257,68 @@ img {
     line-height: 1.2;
     color: var(--text-color);
 }
-.team-icons {
+.social-list {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: rgba(175, 177, 184, 1);
+}
+.social-link:hover,
+.social-link:focus {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(33, 150, 243, 1);
+    cursor: pointer;
+}
+
+.social-icons {
+    fill: currentColor;
+    margin-right: 22px;
+}
+.social-icons:last-child {
+    margin-right: 0;
+}
+.clients-container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.clients-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clients-item {
+    margin-right: 30px;
+}
+.clients-item:last-child {
+    margin-right: 0;
+}
+
+.clients-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid rgba(175, 177, 184, 1);
+    border-radius: 4px;
+    color: rgba(175, 177, 184, 1);
+}
+.clients-link:hover,
+.clients-link:focus {
+    border: 1px solid rgba(33, 150, 243, 1);
+    color: rgba(33, 150, 243, 1);
+}
+.client-icon {
+    fill: currentColor;
 }
 .footer-container .logo {
     margin-bottom: 28px;
