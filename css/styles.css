@@ -132,6 +132,9 @@ img {
     color: var(--accent-color);
 }
 .upper-section {
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left:auto;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-img.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -170,8 +173,9 @@ img {
     display: flex;
 }
 .benefits-icon {
-    padding: 25px 100px;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgba(245, 244, 250, 1);
     margin-bottom: 30px;
     width: 270px;
@@ -252,6 +256,7 @@ img {
     color: var(--main-color);
 }
 .team-dscrpt {
+    margin-bottom: 16px;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.2;
@@ -261,8 +266,14 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 30px;
 }
+.social-item {
+    margin-right: 10px;
+}
+.social-item:last-child {
+    margin-right: 0;
+}
+
 .social-link {
     display: flex;
     align-items: center;
@@ -281,12 +292,8 @@ img {
 
 .social-icons {
     fill: currentColor;
-    margin-right: 22px;
 }
-.social-icons:last-child {
-    margin-right: 0;
-}
-.clients-container {
+.clients-section {
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -316,6 +323,7 @@ img {
 .clients-link:focus {
     border: 1px solid rgba(33, 150, 243, 1);
     color: rgba(33, 150, 243, 1);
+    outline: none;
 }
 .client-icon {
     fill: currentColor;
@@ -334,7 +342,7 @@ img {
 }
 .footer .container {
     display: flex;
-    justify-content: baseline;
+    align-items: baseline;
 }
 .footer-logo {
     color: #FFFFFF;
@@ -379,11 +387,16 @@ img {
 .connect-list {
     display: flex;
 }
+.connect-item {
+    margin-right: 10px;
+}
+.connect-item:last-child {
+    margin-right: 0;
+}
 .connect-link {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 10px;
     width: 44px;
     height: 44px;
     color: #FFFFFF;
@@ -449,11 +462,15 @@ img {
 .card-item:nth-child(3n) {
     margin-right: 0;
 }
-.card-item:hover,
-.card-item:focus {
+.card-link {
+    display: block;
+}
+.card-link:hover,
+.card-link:focus {
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 
                 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
                 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    outline: none;
 }
 .card-image {
 }
